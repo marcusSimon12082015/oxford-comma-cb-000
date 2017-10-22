@@ -6,9 +6,10 @@ def oxford_comma(array)
   else
     new_string = ""
     array.each_with_index{ |val, index|
-      new_string += "#{val}, "
       if index == (array.size - 1)
         new_string += " and " + array[-1]
+      else
+        new_string += "#{val}, "
       end
     }
   end
