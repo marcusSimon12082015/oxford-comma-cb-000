@@ -8,6 +8,6 @@ def oxford_comma(array)
     (1..array.size - 1).each do |i|
       new_string += ", #{i}"
     end
-    return new_string + " and " + array[-1] 
+    return new_string + " and " + array[-1]
   end
 end
